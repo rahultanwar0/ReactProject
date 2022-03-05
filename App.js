@@ -20,37 +20,13 @@ class App extends React.Component {
   render() {
     return (
       <View>
-        <TextInput
-          placeholder="Enter Name"
-          style={styles.textBox}
-          onChangeText={text => {
-            this.setState({name: text});
-          }}></TextInput>
-        <TextInput
-          placeholder="Enter Password"
-          style={styles.textBox}
-          secureTextEntry={true}
-
-          onChangeText={text => {
-            this.setState({password: text});
-          }}></TextInput>
-        <TextInput
-          placeholder="Enter Address"
-          style={styles.textBox}
-
-          onChangeText={text => {
-            this.setState({address: text});
-          }}></TextInput>
-
-        <Button
- 
-
-          title="Login"
-          onPress={() => {
-            this.sumbit();
-          }}
-        />
-      </View>
+        <Text
+          style={{
+            textAlign: 'center'
+          }}>
+          Home Screen
+        </Text>
+  </View>
     );
   }
 }
